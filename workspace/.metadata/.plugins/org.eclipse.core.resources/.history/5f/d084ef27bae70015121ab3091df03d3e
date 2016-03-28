@@ -1,0 +1,16 @@
+package A;
+
+import java.io.PrintWriter;
+
+public class Weapon extends Item {
+
+	public Weapon(String imageFile, boolean visible, boolean canPickUp) {
+		super(imageFile, visible, canPickUp);
+	}
+
+	@Override
+	public void save(PrintWriter pw) {
+		pw.println("Weapon");
+	}
+
+}

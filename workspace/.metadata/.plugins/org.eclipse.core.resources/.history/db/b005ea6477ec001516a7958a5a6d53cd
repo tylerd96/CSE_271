@@ -1,0 +1,11 @@
+package secondTry;
+
+public abstract class Person {
+	
+	private String fName, lName;
+	
+	public Person(String fName, String lName) {
+		
+	}
+
+}

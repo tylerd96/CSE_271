@@ -1,0 +1,9 @@
+
+public class Soldier extends Person {
+
+	public Soldier(String fName, String lName) {
+		super(fName, lName);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,10 @@
+package secondTry;
+
+public class SmallShip extends Ship {
+
+	public SmallShip(String shipName, ShipType shipType) {
+		super(shipName, shipType);
+		// TODO Auto-generated constructor stub
+	}
+
+}

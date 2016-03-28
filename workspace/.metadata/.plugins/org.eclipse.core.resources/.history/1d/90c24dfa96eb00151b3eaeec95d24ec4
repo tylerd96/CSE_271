@@ -1,0 +1,9 @@
+import java.util.ArrayList;
+
+public class SmallShip extends Ship {
+
+	public SmallShip(ArrayList<Person> people, String shipName, ShipType shipType) {
+		super(people, shipName, shipType);
+	}
+
+}

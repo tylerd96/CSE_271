@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;02-25-16_Quest/GameImages/u-7.png&apos; to &apos;money.png&apos;" description="Rename resource &apos;u-7.png&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="GameImages/u-7.png" name="money.png" stamp="1456943843457" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;02-25-16_Quest/quests/StahrQuest_1-0.txt&apos; to &apos;Quest_1-1.txt&apos;" description="Rename resource &apos;StahrQuest_1-0.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="quests/StahrQuest_1-0.txt" name="Quest_1-1.txt" stamp="1456945511719" updateReferences="true"/>
+</session>

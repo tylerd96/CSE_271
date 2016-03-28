@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class MediumShip extends Ship {
+
+	public MediumShip(ArrayList<Person> people, String shipName, ShipType shipType) {
+		super(people, shipName, shipType);
+		// TODO Auto-generated constructor stub
+	}
+
+}

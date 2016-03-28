@@ -1,0 +1,58 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class BankAccount extends JFrame	{
+	
+	
+	
+	public static JButton withdraw = new JButton("Withdraw");
+	public static JButton deposit = new JButton("Deposit");
+	public static JLabel bal;
+	public static JTextArea area = new JTextArea("       		             ");
+	public static double  balance = 1000;
+
+	public static void main(String args[]) {
+		
+		createComponents();
+		
+	}
+	private static void createComponents() {
+		JFrame frame = new JFrame();
+		
+		bal = new JLabel("Current Balance: " + balance);
+		
+		JPanel panel = new JPanel();
+		panel.add(withdraw);
+		panel.add(deposit);
+		panel.add(area);
+		panel.add(bal);
+		frame.add(panel);
+		
+		final int FRAME_WIDTH = 400;
+		final int FRAME_HEIGHT = 200;
+		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+		frame.setTitle("A frame");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		frame.setVisible(true);
+	}
+	class ClickListener implements ActionListener {
+		public void actionPerformed(ActionEvent event) {
+			bal.setText("I was clicked");
+		}
+		public double withdrawMoney(ActionEvent event, double amount) {
+			return balance -= amount;
+		}
+		public double depositMoney(ActionEvent event, double amount) {
+			return balance += amount;
+		}
+	}
+}

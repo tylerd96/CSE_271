@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public abstract class Ship {
+
+	ArrayList<Person> people = new ArrayList<Person>();
+	String shipName;
+	ShipType shipType;
+	
+	public Ship(ArrayList<Person> people, String shipName, ShipType shipType)	{
+		this.people = people;
+		this.shipName = shipName;
+		this.shipType = shipType;
+	}
+	
+}

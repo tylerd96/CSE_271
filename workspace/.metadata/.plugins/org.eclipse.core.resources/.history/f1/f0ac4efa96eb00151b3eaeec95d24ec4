@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class MediumShip extends Ship implements IFighter {
+
+	public MediumShip(ArrayList<Person> people, String shipName, ShipType shipType) {
+		super(people, shipName, shipType);
+	}
+
+	@Override
+	public void attack(IFighter opp) {
+		if(opp instanceof MediumShip || opp instanceof BigShip){
+			
+		}
+	}
+
+}

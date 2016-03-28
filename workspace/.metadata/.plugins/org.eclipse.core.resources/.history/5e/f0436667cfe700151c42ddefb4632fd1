@@ -1,0 +1,48 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class BankAccount extends JFrame{
+
+	
+	private static final int WIDTH = 450;
+	private static final int HEIGHT = 450;
+	private static final int INITIAL_BALANCE=1000;
+	
+	public JButton withdraw, deposit;
+	private JTextField with, depo;
+	private double balance;
+	
+	
+	
+	public BankAccount() {
+		
+	
+		
+	}
+
+	class AddInterestListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+		}
+		private void createButton() {
+			withdraw = new JButton("Withdraw");
+			ActionListener listener = new AddInterestListener();
+			withdraw.addActionListener(listener);
+		}
+		private void createPanel() {
+//			JPanel = new JPanel();
+//			panel.add(withdraw);
+			
+		}
+
+	}
+}
+	

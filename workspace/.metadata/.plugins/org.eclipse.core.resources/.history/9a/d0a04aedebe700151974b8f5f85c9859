@@ -1,0 +1,37 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class BankAccount extends JFrame	{
+	
+	public BankAccount() {
+		
+	}
+	
+	public static void main(String args[]) {
+		JFrame frame = new JFrame();
+		
+		JButton withdraw = new JButton("Withdraw");
+		JButton deposit = new JButton("Deposit");
+		
+		JPanel panel = new JPanel();
+		panel.add(withdraw);
+		panel.add(deposit);
+		frame.add(panel);
+		
+		final int FRAME_WIDTH = 300;
+		final int FRAME_HEIGHT = 100;
+		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+		frame.setTitle("A frame");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		frame.setVisible(true);
+	}
+}

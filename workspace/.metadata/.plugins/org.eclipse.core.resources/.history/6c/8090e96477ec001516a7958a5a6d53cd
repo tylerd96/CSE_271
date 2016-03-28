@@ -1,0 +1,17 @@
+package secondTry;
+
+import java.util.ArrayList;
+
+public abstract class Ship {
+	
+	ArrayList<Person> people = new ArrayList<Person>();
+	public String shipName;
+	private ShipType shipType;
+	
+	public Ship(String shipName, ShipType shipType) {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,11 @@
+
+public abstract class Person {
+	
+	String fName, lName;
+	
+	public Person(String fName, String lName) {
+		this.fName = fName;
+		this.lName = lName;
+	}
+
+}
